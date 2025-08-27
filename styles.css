@@ -1,0 +1,1056 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top Banner */
+.top-banner {
+    background-color: #f8f9fa;
+    padding: 8px 0;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e9ecef;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo-text {
+    color: #6b2c91;
+}
+
+.logo-dot {
+    color: #6b2c91;
+}
+
+.logo-nl {
+    color: #6b2c91;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-btn, .menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: #6b2c91;
+}
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.menu-btn span {
+    width: 20px;
+    height: 2px;
+    background-color: #6b2c91;
+    border-radius: 1px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.product-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 30px;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.category-item:hover {
+    color: #6b2c91;
+    background-color: #f8f9fa;
+    padding-left: 10px;
+}
+
+.category-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #6b2c91;
+}
+
+.category-item span {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.category-item .arrow {
+    color: #999;
+}
+
+.meer-producten-btn {
+    background-color: #4a90a4;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.meer-producten-btn:hover {
+    background-color: #3a7a8e;
+}
+
+/* Bank Cards Illustration */
+.hero-right {
+    position: relative;
+    height: 400px;
+}
+
+.bank-cards-illustration {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bank-card {
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transform-style: preserve-3d;
+}
+
+.card-1 {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: white;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    transform: rotate(-5deg);
+}
+
+.card-2 {
+    background: linear-gradient(135deg, #059669 0%, #10b981 50%, #f59e0b 100%);
+    color: white;
+    top: 60px;
+    right: 40px;
+    z-index: 2;
+    transform: rotate(5deg);
+}
+
+.card-3 {
+    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    color: white;
+    top: 120px;
+    right: 80px;
+    z-index: 1;
+    transform: rotate(-3deg);
+}
+
+.chip {
+    width: 35px;
+    height: 28px;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    border-radius: 4px;
+    position: relative;
+}
+
+.chip::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 16px;
+    background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+    border-radius: 2px;
+}
+
+.card-brand {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Disclaimer */
+.disclaimer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.disclaimer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.disclaimer p {
+    flex: 1;
+    font-size: 14px;
+    color: #666;
+}
+
+.disclaimer a {
+    color: #4a90a4;
+    text-decoration: none;
+}
+
+.disclaimer a:hover {
+    text-decoration: underline;
+}
+
+.disclaimer-image {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Media Section */
+.media-section {
+    background-color: #e9ecef;
+    padding: 30px 0;
+}
+
+.media-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.media-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.media-logos img {
+    height: 30px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.media-logos img:hover {
+    opacity: 1;
+}
+
+/* Highest Rates */
+.highest-rates {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.highest-rates h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.update-text {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #666;
+    font-size: 14px;
+}
+
+.bank-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.bank-card-item {
+    background: linear-gradient(135deg, #6b2c91 0%, #8b5a9f 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.bank-card-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.bank-card-visual {
+    margin: 20px 0;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bank-card-visual img {
+    max-width: 200px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.rate-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.rate-label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.rate-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.meer-info-btn {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.meer-info-btn:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.cta-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #4a90a4;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3a7a8e;
+}
+
+/* Expert Insights */
+.expert-insights {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.expert-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.expert-left {
+    background: linear-gradient(135deg, #6b2c91 0%, #8b5a9f 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.expert-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.expert-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert-left blockquote {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.expert-left cite {
+    font-size: 14px;
+    opacity: 0.8;
+    font-style: normal;
+}
+
+.expert-right h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.expert-right h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #6b2c91;
+}
+
+.expert-right p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.read-research-btn {
+    display: inline-block;
+    background-color: #6b2c91;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.read-research-btn:hover {
+    background-color: #5a2478;
+}
+
+/* Best Footprint */
+.best-footprint {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.best-footprint h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.best-footprint > .container > p {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #666;
+}
+
+.best-footprint a {
+    color: #4a90a4;
+    text-decoration: none;
+}
+
+.footprint-banks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footprint-bank {
+    background: linear-gradient(135deg, #6b2c91 0%, #8b5a9f 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.footprint-bank h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.score-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.score-label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.score-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4ade80;
+}
+
+.view-all-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #4a90a4;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background-color: #3a7a8e;
+}
+
+/* Knowledge Bank */
+.knowledge-bank {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.knowledge-bank h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.knowledge-bank > .container > p {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.knowledge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.knowledge-item {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.knowledge-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.knowledge-item.ad {
+    border: 2px solid #4a90a4;
+}
+
+.ad-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4a90a4;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.knowledge-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.knowledge-content {
+    padding: 25px;
+}
+
+.knowledge-content h3 {
+    margin-bottom: 15px;
+}
+
+.knowledge-content h3 a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.knowledge-content h3 a:hover {
+    color: #6b2c91;
+}
+
+.knowledge-content p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.knowledge-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.date {
+    color: #999;
+}
+
+.read-more {
+    color: #4a90a4;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.knowledge-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.visit-site, .more-info {
+    color: #4a90a4;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.visit-site:hover, .more-info:hover {
+    text-decoration: underline;
+}
+
+/* Financial Products */
+.financial-products {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.financial-products h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.product-category h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-links a {
+    background-color: #a7d8e4;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.product-links a:hover {
+    background-color: #4a90a4;
+    color: white;
+}
+
+/* All Banks */
+.all-banks {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #6b2c91 0%, #8b5a9f 100%);
+    color: white;
+}
+
+.all-banks-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.all-banks-left img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.all-banks-right h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.all-banks-right p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.all-banks-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-primary {
+    background-color: #4a90a4;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3a7a8e;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #6b2c91;
+}
+
+.bank-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+.bank-logos img {
+    max-width: 120px;
+    max-height: 60px;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.bank-logos img:hover {
+    opacity: 1;
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    padding: 60px 0 30px;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.footer-accordion {
+    margin-bottom: 40px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.accordion-header {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+}
+
+.accordion-header:hover {
+    color: #6b2c91;
+}
+
+.accordion-content {
+    padding-bottom: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.accordion-content h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.footer-bottom {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 60px;
+    align-items: start;
+    padding-top: 40px;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer-logo .logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #6b2c91;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #6b2c91;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #6b2c91;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .bank-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .expert-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footprint-banks {
+        grid-template-columns: 1fr;
+    }
+    
+    .all-banks-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .all-banks-buttons {
+        flex-direction: column;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .knowledge-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .disclaimer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .media-logos {
+        gap: 20px;
+    }
+    
+    .footer-bottom {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .bank-logos {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .highest-rates h2,
+    .best-footprint h2,
+    .knowledge-bank h2,
+    .financial-products h2 {
+        font-size: 28px;
+    }
+    
+    .bank-card {
+        width: 240px;
+        height: 150px;
+    }
+    
+    .knowledge-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .knowledge-item {
+        min-width: auto;
+    }
+}
